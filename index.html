@@ -10,20 +10,27 @@
 </head>
 
 <body>
+
+  <!-- HEADER -->
   <header>
-    <div class="company-logo"><span>Teknico</span></div>
+    <div class="company-logo">
+      <a href="#">
+        <img src="/static/images/teknico-icon-original.png" alt="">
+      </a>
+    </div>
     <nav>
-      <ul class="nav-links">
+      <ul class="nav-links" id="nav-links">
         <li class="nav-link"><a href="#">Home</a></li>
         <li class="nav-link"><a href="#">Service</a></li>
         <li class="nav-link"><a href="#">About</a></li>
         <li class="nav-link"><a href="#">Contact</a></li>
       </ul>
-      <div class="burger-menu">
+      <div class="burger-menu" id="burger-menu">
         <img src="/static/images/burger-menu.svg" alt="burger menu">
       </div>
     </nav>
   </header>
+  <!-- HEADER END -->
 
   <!-- HERO SECTION -->
   <section id="hero" style="background-image:
@@ -33,7 +40,8 @@
       <h1>One Step To Bring Your Business Online.</h1>
       <h2>Generate Sales From Just One Click From Your Site.</h2>
       <form action="/" method="POST">
-        <input type="email" name="email-enquiry" id="email-enquiry" placeholder="Enter Your Email Address">
+        <input type="email" name="email-enquiry" id="email-enquiry"
+        placeholder="Enter Your Email Address" required>
         <button type="submit" name="email-submit">
           <img src="/static/images/email-submit.svg" alt="">
         </button>
@@ -92,59 +100,59 @@
   <!-- SERVICE SECTION END -->
 
   <!-- CONTACT SECTION -->
-  <section id="contact">
+  <section id="contact"
+    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/static/images/contact-us-hero.jpg')"
+    >
     <div class="title"><span>Contact</span></div>
-    <div class="contact-us"
-      style="background-image: url('/static/images/contact-us-hero.jpg')"
-      >
-      <div class="contact-us-info">
-        <span class="title">Company Name :</span>
-        <span class="info">Teknico</span>
+    <div class="contact">
+      <div class="contact-us">
+        <div class="contact-us-info">
+          <span class="title">Company Name :</span>
+          <span class="info">Teknico</span>
+        </div>
+        <div class="contact-us-info">
+          <span class="title">Contact Number :</span>
+          <span class="info">+65 8888 8888</span>
+        </div>
+        <div class="contact-us-info">
+          <span class="title">Email Address :</span>
+          <span class="info">teknico@gmail.com</span>
+        </div>
+        <div class="contact-us-logo">
+          <a href="" class="social-logo">
+            <img src="/static/images/facebook-logo.svg" alt="">
+          </a>
+          <a href="" class="social-logo">
+            <img src="/static/images/whatsapp-logo.svg" alt="">
+          </a>
+          <a href="" class="social-logo">
+            <img src="/static/images/telegram-logo.svg" alt="">
+          </a>
+          <a href="" class="social-logo">
+            <img src="/static/images/Linkedin-logo.svg" alt="">
+          </a>
+        </div>
       </div>
-      <div class="contact-us-info">
-        <span class="title">Contact Number :</span>
-        <span class="info">+65 8888 8888</span>
-      </div>
-      <div class="contact-us-info">
-        <span class="title">Email Address :</span>
-        <span class="info">teknico@gmail.com</span>
-      </div>
-      <div class="contact-us-logo">
-        <a href="" class="social-logo">
-          <img src="/static/images/facebook-logo.svg" alt="">
-        </a>
-        <a href="" class="social-logo">
-          <img src="/static/images/whatsapp-logo.svg" alt="">
-        </a>
-        <a href="" class="social-logo">
-          <img src="/static/images/telegram-logo.svg" alt="">
-        </a>
-        <a href="" class="social-logo">
-          <img src="/static/images/Linkedin-logo.svg" alt="">
-        </a>
-      </div>
+      <form action="" method="post">
+        <input type="text" name="contact-name" placeholder="Your Name" required>
+        <input type="tel" name="contact-tel" placeholder="Your Contact Number">
+        <input type="email" name="contact-email" placeholder="Your Email Address" required>
+        <select name="contact-service" id="contact-service" required>
+          <option value="Web Development">Web Development</option>
+          <option value="Desktop Application">Desktop Application</option>
+          <option value="Inventory System">Inventory System</option>
+        </select>
+        <button type="submit" name="contact-submit">Submit</button>
+      </form>
     </div>
-    <form action="" method="post">
-      <input type="text" name="contact-name" placeholder="Your Name">
-      <input type="tel" name="contact-tel" placeholder="Your Contact Number">
-      <input type="email" name="contact-email" placeholder="Your Email Address">
-      <select name="contact-service" id="contact-service">
-        <option value="Full Stack Web Development">Full Stack Web Development</option>
-        <option value="Fronted Development">Frontend Development</option>
-        <option value="Backend Development">Backend Development</option>
-        <option value="Software Development">Software evelopment</option>
-        <option value="Inventory System">Inventory System</option>
-        <option value="Machine Learning">Machine Learning</option>
-      </select>
-      <button type="submit" name="contact-submit">Submit</button>
-
-    </form>
-
   </section>
   <!-- CONTACT SECTION END -->
 
+
   <footer>Copyright@2022</footer>
 
+  <script src="/static/js/index.js"></script>
 </body>
 
 </html>
