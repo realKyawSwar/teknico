@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+:root {
+  --global-margin: 150px;
+  --fontsize-3052: 3.052rem;
+  --fontsize-2441: 2.441rem;
+  --fontsize-1953: 1.953rem;
+  --fontsize-1563: 1.563rem;
+  --fontsize-125: 1.25rem;
+  --fontsize-08: 0.8rem;
+  --fontsize-064: 0.64rem;
+  --fontsize-0512: 0.512rem;
+
+  --color-main: 74, 190, 252;
+  --color-second: 44, 86, 106;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Playfair Display', serif;
+}
+
+/* GLOBAL */
+
+h1 { font-size: var(--fontsize-3052); }
+h2 { font-size: var(--fontsize-2441); }
+h3 { font-size: var(--fontsize-1953); }
+h4 { font-size: var(--fontsize-1563); }
+
+section {
+  margin: 0 var(--global-margin);
+}
+
+
+section > div.title {
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: var(--fontsize-1953);
+  font-weight: 800;
+  letter-spacing: 5px;
+}
+
+section > div.title > span:before,
+section > div.title > span:after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  height: 2px;
+  width: 40px;
+  background-color: black;
+  vertical-align: middle;
+}
+
+section > div.title > span:before {
+  margin-right: 5px;
+}
+
+section > div.title > span:after {
+  margin-left: 5px;
+}
+
+/* GLOBAL END */
+
+/* HEADER */
+header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px var(--global-margin);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.company-logo > span {
+  color: rgba(var(--color-main), 1);
+  font-size: var(--fontsize-1563);
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.nav-link {
+  padding: 0 25px;
+  list-style: none;
+  font-size: var(--fontsize-125);
+  cursor: pointer;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: rgba(var(--color-main), 1);
+}
+
+.burger-menu img {
+  height: 50px;
+  width: auto;
+  display: none;
+}
+
+/* HEADER END */
+
+/* HERO SECTION */
+
+#hero {
+  margin: 0;
+}
+
+#hero {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.hero-content {
+  margin: 0 var(--global-margin);
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero-content > * {
+  flex: 0 1 100%;
+  padding: 18px 0;
+}
+
+.hero-content > h2 {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.hero-content form {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.hero-content form input[type="email"] {
+  width: 350px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid rgba(var(--color-main), 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: var(--fontsize-125);
+  padding-left: 7px;
+  padding-right: 20px;
+}
+
+.hero-content form input[type="email"]:focus {
+  outline: none;
+}
+
+.hero-content form button {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+.hero-content form button img {
+  height: 100%;
+  filter: invert(80%) sepia(9%) saturate(2522%) hue-rotate(159deg) brightness(98%) contrast(98%);
+}
+
+/* HERO SECTION END */
+
+
+/* SERVICE SECTION */
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service-card {
+  flex: 0 1 30%;
+}
+
+.service-title {
+  padding: 7px 0;
+}
+
+.service-image {
+  width: 100%;
+  height: 300px;
+}
+
+.service-image > img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+.service-description {
+  padding-left: 20px;
+}
+
+.service-description > li {
+  padding: 3px 0;
+}
+
+.service-card button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: transparent;
+  border: 2px solid rgba(var(--color-second), 1);
+  border-radius: 8px;
+  color: rgba(var(--color-second), 1);
+  font-size: var(--fontsize-125);
+  cursor: pointer;
+}
+
+.service-card button:hover {
+  background-color: rgba(var(--color-second), 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+/* SERVICE SECTION END */
+
+/*  CONTACT SECTION */
+
+#contact {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#contact > div.title{
+  flex: 0 1 100%;
+}
+
+.contact-us {
+  flex: 0 1 40%;
+  padding: 2px 10px;
+  min-height: 60vh;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contact-us-info {
+  font-size: var(--fontsize-125);
+  padding: 10px 0;
+  letter-spacing: 1px;
+}
+
+.contact-us-logo {
+  padding: 8px 0px;
+}
+
+.contact-us-logo > a {
+  padding: 0px 3px;
+}
+
+.contact-us-logo .social-logo img {
+  width: 45px;
+  height: 45px;
+}
+
+#contact form {
+  flex: 0 1 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #eceded;
+  padding: 0px 50px;
+}
+
+#contact form > * {
+  margin-top: 30px;
+  width: 100%;
+  /* width: 300px; */
+  padding: 8px;
+  padding-bottom: 2px;
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  font-size: var(--fontsize-125);
+}
+
+#contact form > input:focus,
+#contact form > select:focus {
+  outline: none;
+}
+
+#contact form > button {
+  padding: 0;
+  border: 1px solid black;
+  width: 100px;
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+/*  CONTACT SECTION END */

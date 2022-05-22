@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <div class="company-logo"><span>Teknico</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li class="nav-link"><a href="#">Home</a></li>
+        <li class="nav-link"><a href="#">Service</a></li>
+        <li class="nav-link"><a href="#">About</a></li>
+        <li class="nav-link"><a href="#">Contact</a></li>
+      </ul>
+      <div class="burger-menu">
+        <img src="/static/images/burger-menu.svg" alt="burger menu">
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="hero" style="background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/static/images/hero.jpg')">
+    <div class="hero-content">
+      <h1>One Step To Bring Your Business Online.</h1>
+      <h2>Generate Sales From Just One Click From Your Site.</h2>
+      <form action="/" method="POST">
+        <input type="email" name="email-enquiry" id="email-enquiry" placeholder="Enter Your Email Address">
+        <button type="submit" name="email-submit">
+          <img src="/static/images/email-submit.svg" alt="">
+        </button>
+      </form>
+    </div>
+  </section>
+  <!-- HERO SECTION END -->
+
+  <!-- SERVICE SECTION -->
+  <section id="service">
+    <div class="title"><span>Service</span></div>
+    <div class="service-cards">
+      <div class="service-card">
+        <div class="service-image">
+          <img src="/static/images/website-design-service.jpg" alt="">
+        </div>
+        <h3 class="service-title">Web Development</h3>
+        <ul class="service-description">
+          <li>Frontend Development</li>
+          <li>Backend Development</li>
+          <li>Html, Javascript, Css</li>
+          <li>Python, Golang</li>
+          <li>Database</li>
+          <li>Server & Domain Deployment</li>
+        </ul>
+        <button class="action-button">Get Quote</button>
+      </div>
+      <div class="service-card">
+        <div class="service-image">
+          <img src="/static/images/desktop-application-service.jpg" alt="">
+        </div>
+        <h3 class="service-title">Desktop Application</h3>
+        <ul class="service-description">
+          <li>Windows Application</li>
+          <li>Job Task Automation</li>
+          <li>Specific Application For Needs</li>
+        </ul>
+        <button class="action-button">Get Quote</button>
+      </div>
+      <div class="service-card">
+        <div class="service-image">
+          <img src="/static/images/inventory-system-service.jpg" alt="">
+        </div>
+        <h3 class="service-title">Inventory System</h3>
+        <ul class="service-description">
+          <li>Specific Inventory System</li>
+          <li>Various Industry</li>
+          <li>Database</li>
+          <li>Web App Deployment</li>
+          <li>Desktop Application Deployment</li>
+        </ul>
+        <button class="action-button">Get Quote</button>
+      </div>
+    </div>
+  </section>
+  <!-- SERVICE SECTION END -->
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <div class="title"><span>Contact</span></div>
+    <div class="contact-us"
+      style="background-image: url('/static/images/contact-us-hero.jpg')"
+      >
+      <div class="contact-us-info">
+        <span class="title">Company Name :</span>
+        <span class="info">Teknico</span>
+      </div>
+      <div class="contact-us-info">
+        <span class="title">Contact Number :</span>
+        <span class="info">+65 8888 8888</span>
+      </div>
+      <div class="contact-us-info">
+        <span class="title">Email Address :</span>
+        <span class="info">teknico@gmail.com</span>
+      </div>
+      <div class="contact-us-logo">
+        <a href="" class="social-logo">
+          <img src="/static/images/facebook-logo.svg" alt="">
+        </a>
+        <a href="" class="social-logo">
+          <img src="/static/images/whatsapp-logo.svg" alt="">
+        </a>
+        <a href="" class="social-logo">
+          <img src="/static/images/telegram-logo.svg" alt="">
+        </a>
+        <a href="" class="social-logo">
+          <img src="/static/images/Linkedin-logo.svg" alt="">
+        </a>
+      </div>
+    </div>
+    <form action="" method="post">
+      <input type="text" name="contact-name" placeholder="Your Name">
+      <input type="tel" name="contact-tel" placeholder="Your Contact Number">
+      <input type="email" name="contact-email" placeholder="Your Email Address">
+      <select name="contact-service" id="contact-service">
+        <option value="Full Stack Web Development">Full Stack Web Development</option>
+        <option value="Fronted Development">Frontend Development</option>
+        <option value="Backend Development">Backend Development</option>
+        <option value="Software Development">Software evelopment</option>
+        <option value="Inventory System">Inventory System</option>
+        <option value="Machine Learning">Machine Learning</option>
+      </select>
+      <button type="submit" name="contact-submit">Submit</button>
+
+    </form>
+
+  </section>
+  <!-- CONTACT SECTION END -->
+
+  <footer>Copyright@2022</footer>
+
+</body>
+
+</html>
